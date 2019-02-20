@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edytor graficzny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <div class="dashboard">
+        <input type="color" name="penColor" value="#000000">
+        <input type="range" name="penWidth" min="1" max="100" step="2" value="5">
+        <button id="saver">Save</button>
+    </div>
+
+    <form>
+        <h3>Photo Filter:</h3>
+
+
+        <div class="tools-input">
+            <label>Grey scale</label>
+            <input type="range" id="GreyScale" min="0" max="100" onchange="Scale()" /><br>
+
+            <div class="tools-input">
+                <label>Brightness</label>
+                <input type="range" id="Brightness" min="0" max="100" value="0" step="1" onchange="Brightness()" />
+            </div>
+            <div class="tools-input">
+                <label>Contrast</label>
+                <input type="range" id="Contrast" min="0" max="1" value="0" step=".1" onchange="Contrast()" />
+            </div>
+            <div class="tools-input">
+                <label>Blur</label>
+                <input type="range" id="Blur" min="0" max="8" value="0" step="1" onchange="Blur()" />
+            </div>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
