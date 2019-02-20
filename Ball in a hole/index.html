@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Game ball in Hole</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Tworzenie licznika  -->
+    <div class="counter"></div>
+    <!-- Tworzenie BOXU -->
+    <div class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+    <!-- Podłączenie fizyki 2D -->
+    <script src="./js/matter.js"></script>
+
+    <script type="module">
+        import Game from './js/game.js';
+
+        new Game();
+    </script>
+</body>
+
+</html>
