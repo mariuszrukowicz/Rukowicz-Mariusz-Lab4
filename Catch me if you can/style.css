@@ -1,0 +1,121 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*przyciski */
+button {
+    -moz-box-shadow: inset 0px 14px 21px 9px #f9eca0;
+    -webkit-box-shadow: inset 0px 14px 21px 9px #f9eca0;
+    box-shadow: inset 0px 14px 21px 9px #f9eca0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #facc00), color-stop(1, #f2ab1e));
+    background: -moz-linear-gradient(top, #facc00 5%, #f2ab1e 100%);
+    background: -webkit-linear-gradient(top, #facc00 5%, #f2ab1e 100%);
+    background: -o-linear-gradient(top, #facc00 5%, #f2ab1e 100%);
+    background: -ms-linear-gradient(top, #facc00 5%, #f2ab1e 100%);
+    background: linear-gradient(to bottom, #facc00 5%, #f2ab1e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#facc00', endColorstr='#f2ab1e', GradientType=0);
+    background-color: #facc00;
+    -moz-border-radius: 34px;
+    -webkit-border-radius: 34px;
+    border-radius: 34px;
+    border: 3px solid #e65f44;
+    display: inline-block;
+    cursor: pointer;
+    color: #c92200;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 24px;
+    text-decoration: none;
+    text-shadow: 4px 8px 21px #ded17c;
+    margin: 10px;
+}
+
+.button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #facc00));
+    background: -moz-linear-gradient(top, #f2ab1e 5%, #facc00 100%);
+    background: -webkit-linear-gradient(top, #f2ab1e 5%, #facc00 100%);
+    background: -o-linear-gradient(top, #f2ab1e 5%, #facc00 100%);
+    background: -ms-linear-gradient(top, #f2ab1e 5%, #facc00 100%);
+    background: linear-gradient(to bottom, #f2ab1e 5%, #facc00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#facc00', GradientType=0);
+    background-color: #f2ab1e;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+article {
+    color: #c92200;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+
+
+}
+
+#info {
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    background-color: #b2beb6;
+    border-right: 3px solid black;
+    overflow: 'hidden'
+}
+
+#data {
+    width: 80%;
+    height: 100%;
+    border-right: 3px solid black;
+    background-color: #b2beb6;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    display: flex;
+
+}
+
+#root {
+    height: 80%;
+    width: 100%;
+}
+
+#menu {
+    height: 100%;
+    width: 20%;
+    background-color: #b2beb6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 3px solid black;
+}
+
+#chat {
+    width: 80%;
+    height: 100%;
+    background-color: pink;
+}
+
+.container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border-top: 3px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.flex-wrapp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
