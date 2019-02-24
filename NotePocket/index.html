@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NotePocket</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Covered+By+Your+Grace|Pacifico|Racing+Sans+One" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Tworzenie kontenera -->
+  <div id="notes-container"></div>
+  <button id="btn-show-modal" class="btn btn--rounded"><img src="images/note.png"></button>
+  <div id="message" class="message">
+    Dodaj nowe notatki!
+  </div>
+  <!-- Twoezenie przycisków oraz formularza notatek -->
+  <div id="modal-layer" class="modal is-hidden">
+    <div class="modal_ _body">
+      <button class="btn btn-close" id="btn-close-modal"></button>
+      <input type="text" id="title-input" class="h-margin-bottom" placeholder="Tytuł" maxlength="128" />
+      <textarea id="description-input" class="h-margin-bottom" placeholder="Treść notatki" rows="6" maxlength="256"></textarea>
+      <div class="checkbox-wrapper h-margin-bottom">
+        <input type="checkbox" id="highlighted-checkbox" />
+        <label for="highlighted-checkbox">Ważna notatka</label>
+      </div>
+      <div class="h-text-center">
+        <button id="btn-create-note" class="btn btn--primary">Utwórz nową notatkę</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
